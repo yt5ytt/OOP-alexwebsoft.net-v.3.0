@@ -2,3 +2,13 @@
   padding: 0;
   margin: 0;
 }
+
+body{
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#topLine{
+  color: white;
+}

@@ -22,6 +22,8 @@ define ('ROOTURI', $protocol . '://' . $_SERVER['SERVER_NAME'] . DS);
 
 include('header.php');
 
+include(ABSPATH . 'inc' . DS . 'topLine.inc.php');
+
 
 
 
