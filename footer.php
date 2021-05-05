@@ -1,5 +1,5 @@
 
-  <script type="text/javascript" src="inc/js/master.js"></script>
+  <script type="text/javascript" src="<?php echo ROOTURI . 'inc' . DS . 'js' . DS . 'master.js'; ?>"></script>
 
   </body>
 </html>
