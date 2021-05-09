@@ -9,6 +9,33 @@ body{
   background-size: cover;
 }
 
+.wrapper{
+  width: 98%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/** topLine style */
+
 #topLine{
+  position: fixed;
+  width: 100vw;
+  font-size: 1.5rem;
+  background-color: black;
   color: white;
+  line-height: 5rem;
+  border-bottom: 1px dotted white;
+}
+
+#contactInfo{
+  background-color: lightblue;
+  width: 40%;
+  float: left;
+}
+
+nav{
+  width: 60%;
+  background-color: pink;
+  float: right;
+  text-align: right;
 }
