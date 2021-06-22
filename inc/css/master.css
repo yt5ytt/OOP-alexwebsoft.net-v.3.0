@@ -28,14 +28,15 @@ body{
 }
 
 #contactInfo{
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: 40%;
   float: left;
+  font-size: 1rem;
 }
 
 nav{
   width: 60%;
-  background-color: pink;
+  /* background-color: pink; */
   float: right;
   text-align: right;
 }
