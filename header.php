@@ -12,3 +12,7 @@
     <link rel="icon" type="img/png" href="<?php echo ROOTURI . 'inc' . DS . 'img' . DS . 'favicon.png'; ?>">
   </head>
   <body>
+
+    <?php
+
+      include(ABSPATH . 'inc' . DS . 'topLine.inc.php');

@@ -18,13 +18,14 @@ body{
 /** topLine style */
 
 #topLine{
-  position: fixed;
+  /* position: relative; */
   width: 100vw;
   font-size: 1.5rem;
   background-color: black;
   color: white;
   line-height: 5rem;
   border-bottom: 1px dotted white;
+  overflow: hidden;
 }
 
 #contactInfo{
@@ -39,4 +40,8 @@ nav{
   /* background-color: pink; */
   float: right;
   text-align: right;
+}
+
+.beliDiv{
+  background-color: white;
 }

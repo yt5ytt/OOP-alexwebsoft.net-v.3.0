@@ -20,9 +20,11 @@ define('ABSPATH', dirname(__FILE__) . DS);
 $protocol = empty($_SERVER['HTTPS']) ? 'http' : 'https';
 define ('ROOTURI', $protocol . '://' . $_SERVER['SERVER_NAME'] . DS);
 
+/** Include autoloader */
+include(ABSPATH . 'vendor' . DS . 'autoload.php');
+
 include('header.php');
 
-include(ABSPATH . 'inc' . DS . 'index.inc.php');
 
 
 
