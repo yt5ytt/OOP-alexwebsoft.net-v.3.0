@@ -28,7 +28,7 @@ CREATE TABLE `pages` (
   `link` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
   `status` varchar(20) CHARACTER SET utf8 DEFAULT 'Main',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `pages` (
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
-INSERT INTO `pages` VALUES (1,'Home','index.php','Main'),(2,'Portfolio','portfolio.inc.php','Main'),(3,'Contact Us','contactUs.inc.php','Main'),(4,'WordPress','','Main'),(5,'Themes','wpThemes.inc.php','Sub'),(6,'Plugins','wpPlugins.inc.php','Sub');
+INSERT INTO `pages` VALUES (1,'Home','index.php','Main'),(2,'Portfolio','portfolio.inc.php','Main'),(3,'WordPress','#','Main'),(4,'Contact Us','contactUs.inc.php','Main'),(5,'Themes','wpThemes.inc.php','Sub-WordPress'),(6,'Plugins','wpPlugins.inc.php','Sub-WordPress');
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,4 +101,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-05 22:12:05
+-- Dump completed on 2021-07-16 11:23:30
