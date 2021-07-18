@@ -20,14 +20,24 @@ define('ABSPATH', dirname(__FILE__) . DS);
 $protocol = empty($_SERVER['HTTPS']) ? 'http' : 'https';
 define ('ROOTURI', $protocol . '://' . $_SERVER['SERVER_NAME'] . DS);
 
+/** Define include folder path */
+define('INC', ABSPATH . 'inc' . DS);
+
 /** Include autoloader */
 include(ABSPATH . 'vendor' . DS . 'autoload.php');
 
+if(!@$_GET['pageID']){
+  $_GET['pageID'] = 1;
+}
+
+use App\Pages;
+
+$menu = new Pages();
+
 include('header.php');
 
-
-
-
-
+if($menu->pageLink($_GET['pageID']) != '#'):
+  include(INC . $menu->pageLink($_GET['pageID']));
+endif;
 
 include('footer.php');
