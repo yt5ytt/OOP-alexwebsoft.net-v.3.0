@@ -37,7 +37,7 @@ CREATE TABLE `pages` (
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
-INSERT INTO `pages` VALUES (1,'Home','home.inc.php','Main'),(2,'Portfolio','portfolio.inc.php','Main'),(3,'WordPress','#','Main'),(4,'Contact Us','contactUs.inc.php','Main'),(5,'Themes','wpThemes.inc.php','Sub-WordPress'),(6,'Plugins','wpPlugins.inc.php','Sub-WordPress');
+INSERT INTO `pages` VALUES (1,'Home','index.php','Main'),(2,'Portfolio','portfolio.inc.php','Main'),(3,'WordPress','#','Main'),(4,'Contact Us','contactUs.inc.php','Main'),(5,'Themes','wpThemes.inc.php','Sub-WordPress'),(6,'Plugins','wpPlugins.inc.php','Sub-WordPress');
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,4 +101,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-18 21:52:18
+-- Dump completed on 2021-07-16 11:23:30

@@ -15,6 +15,4 @@
 
     <?php
 
-      include(INC . 'topLine.inc.php');
-
-      include(INC . 'siteHeader.inc.php');
+      include(ABSPATH . 'inc' . DS . 'topLine.inc.php');
