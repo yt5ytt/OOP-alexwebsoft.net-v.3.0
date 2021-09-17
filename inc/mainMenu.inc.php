@@ -8,19 +8,19 @@
   $menu = new Pages();
 
  ?>
-<nav>
-  <ul class='mainMenu'>
+<nav class='menu'>
+  <ol>
   <?php foreach($menu->mainMenu as $mainMenu): ?>
-    <li>
+    <li class='menu-item'>
       <?php echo $mainMenu->title; ?>
       <?php if($mainMenu->link == '#'):?>
-        <ul class='subMenu'>
+        <ol class='sub-menu'>
         <?php foreach($menu->subMenu('Sub-' . $mainMenu->title) as $subMenu): ?>
-          <li><?php echo $subMenu->title; ?></li>
+          <li class='menu-item'><?php echo $subMenu->title; ?></li>
         <?php endforeach; ?>
-        </ul>
+      </ol>
       <?php endif; ?>
     </li>
   <?php endforeach; ?>
-  </ul>
+</ol>
 </nav>
