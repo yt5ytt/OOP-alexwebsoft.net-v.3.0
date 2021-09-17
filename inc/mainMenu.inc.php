@@ -1,11 +1,4 @@
 <?php
-  if(!@$_GET['pageID']){
-    $_GET['pageID'] = 1;
-  }
-
-  use App\Pages;
-
-  $menu = new Pages();
 
  ?>
 <nav class='menu'>
@@ -20,7 +13,7 @@
         <?php endforeach; ?>
       </ol>
       <?php endif; ?>
-    </li>
+    </a></li>
   <?php endforeach; ?>
 </ol>
 </nav>

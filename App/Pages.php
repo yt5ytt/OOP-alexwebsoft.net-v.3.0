@@ -31,6 +31,10 @@ class Pages extends Dbh
     return $result->fetchAll();
   }
 
-
-
+  public function pageLink($pageID){
+    $sql = "SELECT link FROM pages WHERE id='$pageID'";
+    $result = $this->dbh()->prepare($sql);
+    $result->execute();
+    return $result->fetchColumn();
+  }
 }
