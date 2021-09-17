@@ -1,6 +1,14 @@
 <?php
+  if(!@$_GET['pageID']){
+    $_GET['pageID'] = 1;
+  }
+
+  use App\Pages;
+
+  $menu = new Pages();
 
  ?>
+
 <nav class='menu'>
   <ol>
   <?php foreach($menu->mainMenu as $mainMenu): ?>
