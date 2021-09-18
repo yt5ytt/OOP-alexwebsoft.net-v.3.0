@@ -22,14 +22,14 @@ body{
   font-size: 1.5rem;
   background-color: black;
   color: white;
-  line-height: 5rem;
+  height: 4rem;
 }
 
 #contactInfo{
   width: 40%;
   float: left;
   font-size: 1.5rem;
-  line-height: 5rem;
+  line-height: 4rem;
 }
 
 /**** Menu styles *****/
