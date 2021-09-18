@@ -213,3 +213,14 @@ a {
     opacity: 1; } }
 
 /*** End of menu styles ***/
+
+/***  Site Header styles ***/
+
+#homeHeader{
+  width: 100%;
+  height: calc(100vh - 4rem);
+  background-color: rgba(0, 0, 0, .3);
+  color: white;
+}
+
+/***  End of Header styles ***/
