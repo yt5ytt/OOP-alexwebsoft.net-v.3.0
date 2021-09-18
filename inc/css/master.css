@@ -223,4 +223,8 @@ a {
   color: white;
 }
 
+#homeHeader h1{
+  font-size: 5rem;
+}
+
 /***  End of Header styles ***/
