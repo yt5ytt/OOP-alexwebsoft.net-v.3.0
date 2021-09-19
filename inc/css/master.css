@@ -219,8 +219,15 @@ a {
 #homeHeader{
   width: 100%;
   height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, .3);
   color: white;
+}
+
+.centerBox{
+  text-align: center;
 }
 
 #homeHeader h1{
