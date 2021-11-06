@@ -4,9 +4,6 @@
    * @package alexWEBsoft.net
    */
 
-
-
-
 /** Define new line constant */
 define('BR', '<br />');
 
@@ -36,13 +33,10 @@ $menu = new Pages();
 
 include('header.php');
 
-echo $_GET['pageID'];
-
 if($_GET['pageID'] != 1):
   include (ABSPATH . 'inc' . DS . $menu->pageLink($_GET['pageID']));
+else:
+  include (ABSPATH . 'inc' . DS . 'home.inc.php');
 endif;
-
-
-
 
 include('footer.php');
