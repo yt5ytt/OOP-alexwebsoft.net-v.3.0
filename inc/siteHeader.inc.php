@@ -16,7 +16,7 @@
 
     ?>
       <div id="siteHeader">
-        <h1>alexWEBsoft.net</h1>
+        <h1 class="wrapper">alexWEBsoft.net</h1>
       </div>
 
     <?php

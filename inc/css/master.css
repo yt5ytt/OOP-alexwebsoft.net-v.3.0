@@ -193,7 +193,10 @@ body{
     width: 100vw;
     left: -2rem;
     top: 50%;
-    transform: translateY(-50%); } }
+    transform: translateY(-50%);
+  }
+
+}
 
 a {
   text-decoration: none; }
@@ -231,11 +234,23 @@ a {
 }
 
 #homeHeader h1{
-  font-size: 5rem;
+  font-size: 10rem;
 }
 
 #homeHeader h2{
-  font-size: 3rem;
+  font-size: 5rem;
+}
+
+#siteHeader{
+  width: 100%;
+  height: 10rem;
+  background-color: blue;
+  color: white;
+}
+
+#siteHeader h1{
+  line-height: 10rem;
+  font-size: 4rem;
 }
 
 /***  End of Header styles ***/

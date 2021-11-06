@@ -4,6 +4,9 @@
    * @package alexWEBsoft.net
    */
 
+
+
+
 /** Define new line constant */
 define('BR', '<br />');
 
@@ -23,9 +26,21 @@ define ('ROOTURI', $protocol . '://' . $_SERVER['SERVER_NAME'] . DS);
 /** Include autoloader */
 include(ABSPATH . 'vendor' . DS . 'autoload.php');
 
+if(!@$_GET['pageID']){
+  $_GET['pageID'] = 1;
+}
+
+use App\Pages;
+
+$menu = new Pages();
+
 include('header.php');
 
+echo $_GET['pageID'];
 
+if($_GET['pageID'] != 1):
+  include (ABSPATH . 'inc' . DS . $menu->pageLink($_GET['pageID']));
+endif;
 
 
 

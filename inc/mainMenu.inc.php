@@ -1,23 +1,15 @@
-<?php
-  if(!@$_GET['pageID']){
-    $_GET['pageID'] = 1;
-  }
-
-  use App\Pages;
-
-  $menu = new Pages();
-
- ?>
-
 <nav class='menu'>
   <ol>
   <?php foreach($menu->mainMenu as $mainMenu): ?>
     <li class='menu-item'>
+      <?php if ($mainMenu->link != '#'): ?>
+        <a href="index.php?pageID=<?php echo $mainMenu->id; ?>">
+      <?php endif; ?>
       <?php echo $mainMenu->title; ?>
       <?php if($mainMenu->link == '#'):?>
         <ol class='sub-menu'>
         <?php foreach($menu->subMenu('Sub-' . $mainMenu->title) as $subMenu): ?>
-          <li class='menu-item'><?php echo $subMenu->title; ?></li>
+          <li class='menu-item'><a href="index.php?pageID=<?php echo $subMenu->id; ?>"><?php echo $subMenu->title; ?></a></li>
         <?php endforeach; ?>
       </ol>
       <?php endif; ?>
