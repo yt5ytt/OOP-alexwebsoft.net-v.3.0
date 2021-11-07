@@ -33,10 +33,6 @@ $menu = new Pages();
 
 include('header.php');
 
-if($_GET['pageID'] != 1):
-  include (ABSPATH . 'inc' . DS . $menu->pageLink($_GET['pageID']));
-else:
-  include (ABSPATH . 'inc' . DS . 'home.inc.php');
-endif;
+include(ABSPATH . 'inc' . DS . $menu->pageLink($_GET['pageID']));
 
 include('footer.php');
