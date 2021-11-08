@@ -7,6 +7,7 @@ body{
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 }
 
 .wrapper{
@@ -257,3 +258,25 @@ a {
 }
 
 /***  End of Header styles ***/
+
+/*** Main home styles ***/
+
+#main{
+  background-color: white;
+  width: 100vw;
+  padding: 10rem 0;
+}
+
+.main-box {
+  display: grid;
+}
+
+#technologies{
+  background-image: linear-gradient(to right bottom, navy, grey);
+  padding: 10rem 0;
+}
+
+footer{
+  background-color: rgba(0, 0, 0, .3);
+  padding: 10rem 0;
+}
