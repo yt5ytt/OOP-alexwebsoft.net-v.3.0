@@ -8,6 +8,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-attachment: fixed;
 }
 
 .wrapper{
@@ -274,6 +275,20 @@ a {
 #technologies{
   background-image: linear-gradient(to right bottom, navy, grey);
   padding: 10rem 0;
+  text-align: center;
+}
+
+#technologies img.techs{
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+#technologies img.techs:hover{
+  transform: rotateY(180deg);
+  transition: linear 0.3s;
+  cursor: pointer;
 }
 
 footer{

@@ -10,11 +10,9 @@
 class Pages extends Dbh
 {
   public $mainMenu;
-  //public $subMenu;
-
+  
   public function __construct(){
     $this->mainMenu = $this->mainMenu();
-    //$this->subMenu = $this->subMenu();
   }
 
   private function mainMenu(){
