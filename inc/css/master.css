@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: arial;
 }
 
 body{
@@ -265,17 +266,101 @@ a {
 #main{
   background-color: white;
   width: 100vw;
-  padding: 10rem 0;
+  padding: 2rem 0;
 }
 
 .main-box {
   display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 3rem;
+}
+
+.sidebar{
+  background-color: hsla(0, 0%, 84%, 0.7);
+  padding: 8rem 0;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.sidebar h1{
+  font-size: 2.5rem;
+  color: #389cb5;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.sidebarWrapper{
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.profilePicture{
+  text-align: center;
+}
+
+.profilePicture img{
+  border-radius: 50%;
+  border: 1rem solid lightblue;
+}
+
+.sidebar .contact{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.sidebar .contact h2{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.sidebar .contact h3{
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.sidebar .contact a{
+  color: black;
+  text-decoration: underline;
+}
+
+.sidebar .contact a:hover{
+  cursor: pointer;
+  color: grey;
+}
+
+.sidebar .contact i{
+  font-size: 3rem;
+  padding: 0 0.5rem;
+}
+
+.aboutMe{
+  padding: 8rem 0;
+  font-size: 2rem;
+}
+
+.aboutMe p{
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+.aboutMe p:last-child{
+  padding-bottom: 0;
+}
+
+.aboutMe ul li{
+  list-style-type: none;
 }
 
 #technologies{
   background-image: linear-gradient(to right bottom, navy, grey);
   padding: 10rem 0;
   text-align: center;
+}
+
+#technologies h1{
+  margin-bottom: 5rem;
+  color: white;
+  font-size: 5rem;
 }
 
 #technologies img.techs{
