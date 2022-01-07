@@ -35,4 +35,11 @@ class Pages extends Dbh
     $result->execute();
     return $result->fetchColumn();
   }
+
+  public function getTitle($pageID){
+    $sql = "SELECT title FROM pages WHERE id='$pageID'";
+    $result = $this->dbh()->prepare($sql);
+    $result->execute();
+    return $result->fetchColumn();
+  }
 }

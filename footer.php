@@ -1,5 +1,15 @@
 
   <footer>
+    <div class="social wrapper">
+      <h1>STAY IN TOUCH!!!</h1>
+      <div class="icons">
+        <?php $websites -> socialIcons()?>
+      </div>      
+    </div>
+
+    <div class="copywrite">
+      Designed by alexWEBsoft © 2022. - All rights reserved.
+    </div>
     
 
   </footer>

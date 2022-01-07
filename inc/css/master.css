@@ -351,6 +351,15 @@ a {
   list-style-type: none;
 }
 
+#portfolio{
+  background-color: white;
+  padding: 10rem 0;
+}
+
+#portfolio h1{
+  font-size: 5rem;
+}
+
 #technologies{
   background-image: linear-gradient(to right bottom, navy, grey);
   padding: 10rem 0;
@@ -378,5 +387,33 @@ a {
 
 footer{
   background-color: rgba(0, 0, 0, .3);
+  text-align: center;
+  color: white;
+}
+
+footer .social{
   padding: 10rem 0;
+}
+
+footer .social h1{
+  font-size: 5rem;
+}
+
+footer .icons{
+  font-size: 5rem;
+  padding-top: 2rem;
+}
+
+footer .icons a{
+  color: rgba(255, 255, 255, .5);
+  padding: 0 1rem;
+}
+
+footer .icons a:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+footer .copywrite{
+  border-top: 2px dotted white;
+  line-height: 2rem;
 }

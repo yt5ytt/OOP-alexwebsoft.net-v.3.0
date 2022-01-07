@@ -14,6 +14,7 @@
     <ul>
       <li>HTML5, CSS3;</li>
       <li>OOP PHP, MVC and MySQL;</li>
+      <li>Python;</li>
       <li>Working with JQuery libraries;</li>
       <li>Responsive Web Design;</li>
       <li>WordPress CMS;</li>
