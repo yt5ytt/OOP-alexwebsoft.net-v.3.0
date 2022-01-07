@@ -1,4 +1,7 @@
 
+</div><!-- kraj diva #main -->
+
+
   <footer>
     <div class="social wrapper">
       <h1>STAY IN TOUCH!!!</h1>

@@ -265,14 +265,14 @@ a {
 
 #main{
   background-color: white;
-  width: 100vw;
-  padding: 2rem 0;
+  width: 100vw;  
 }
 
 .main-box {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 3rem;
+  padding: 2rem 0;
 }
 
 .sidebar{

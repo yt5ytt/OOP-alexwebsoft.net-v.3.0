@@ -18,3 +18,7 @@
       include(ABSPATH . 'inc' . DS . 'topLine.inc.php');
 
       include(ABSPATH . 'inc' . DS . 'siteHeader.inc.php');
+    
+    ?>
+
+    <div id="main">
