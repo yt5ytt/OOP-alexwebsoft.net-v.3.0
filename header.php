@@ -22,3 +22,7 @@
     ?>
 
     <div id="main">
+
+      <?php if($menu->getTitle($_GET['pageID']) != "Home"): ?>
+        <h1 class="pageTitle wrapper"><?php echo $menu->getTitle($_GET['pageID']); ?></h1>
+      <?php endif; ?>

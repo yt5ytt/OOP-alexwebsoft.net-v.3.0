@@ -18,7 +18,7 @@ body{
   margin: 0 auto;
 }
 
-/** topLine style */
+/** TOPLINE STYLES */
 
 #topLine{
   width: 100vw;
@@ -35,7 +35,7 @@ body{
   line-height: 4rem;
 }
 
-/**** Menu styles *****/
+/**** MENU STYLES *****/
 
 .menu {
   background: black;
@@ -223,7 +223,7 @@ a {
 
 /*** End of menu styles ***/
 
-/***  Site Header styles ***/
+/***  SITE HEADER STYLES ***/
 
 #homeHeader{
   width: 100%;
@@ -261,11 +261,16 @@ a {
 
 /***  End of Header styles ***/
 
-/*** Main home styles ***/
+/*** MAIN HOME STYLES ***/
 
 #main{
   background-color: white;
   width: 100vw;  
+}
+
+#main h1.pageTitle{
+  padding: 5rem 0 2rem;
+  font-size: 3rem;
 }
 
 .main-box {
@@ -351,14 +356,45 @@ a {
   list-style-type: none;
 }
 
-#portfolio{
-  background-color: white;
-  padding: 10rem 0;
+/*** PORTFOLIO STYLES ***/
+
+#portfolio .portfolio{
+  padding: 2rem 0 5rem;
 }
 
-#portfolio h1{
-  font-size: 5rem;
+#portfolio .oneRow{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+  padding: 2rem 0;
+  border-top: 1px dotted black;
 }
+
+#portfolio .oneRow:last-child{
+  border-bottom: 1px dotted black;
+}
+
+#portfolio .oneRow h2{
+  padding-bottom: 2rem;
+}
+
+#portfolio .projectImage{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 15rem;
+}
+
+#portfolio .projectText p a{
+  color: black;
+  text-decoration: underline;
+}
+
+#portfolio .projectText p a:hover{
+  color: blue;
+}
+
+/*** TECHNOLOGIES STYLES ***/
 
 #technologies{
   background-image: linear-gradient(to right bottom, navy, grey);
@@ -384,6 +420,8 @@ a {
   transition: linear 0.3s;
   cursor: pointer;
 }
+
+/*** FOOTER STYLES ***/
 
 footer{
   background-color: rgba(0, 0, 0, .3);
