@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2022 at 12:20 AM
+-- Generation Time: Jan 08, 2022 at 08:16 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -45,6 +45,30 @@ INSERT INTO `pages` (`id`, `title`, `link`, `status`) VALUES
 (4, 'Contact Us', 'contactUs.inc.php', 'Main'),
 (5, 'Themes', 'wpThemes.inc.php', 'Sub-WordPress'),
 (6, 'Plugins', 'wpPlugins.inc.php', 'Sub-WordPress');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `portfolio`
+--
+
+CREATE TABLE `portfolio` (
+  `id` int(2) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `link` varchar(50) NOT NULL,
+  `text` text NOT NULL,
+  `codesource` varchar(50) NOT NULL,
+  `image` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `portfolio`
+--
+
+INSERT INTO `portfolio` (`id`, `title`, `link`, `text`, `codesource`, `image`) VALUES
+(1, 'DiMarcoPizza', 'http://www.dimarcopizza.rs/', 'Di Marco Pizza is online ordering website. It is made in procedural PHP with MySQL integration.\r\nIt has menu section, section for ordering fast food and later finishing orders. It has its own backend, where owner can create and add new items in menu, can delete items as well, can see what are new orders of clients who order fast food and also can manage clients profiles (delete unapropriate clients)\r\nThis is my first large project that I\'ve been made, so I can tell that I learned a lot during it.', 'https://github.com/yt5ytt/dimarcopizza.rs.git', 'dimarco.png'),
+(2, 'MajstoriOnline', 'http://majstorionline.com/', 'MajstoriOnline is house help finding site. It was made in procedural PHP with MySQL integration.\r\nIdea of the site is connection clients who need any sort of house help and repair with masters that can help them. Whoever needs a master here can advertise the job in literally one minute and thus avoid calling, searching and explaining to the masters what and how it needs to be done and immediately get the price of how much the work costs and thus can save and pass more favorably. Master and clients registers themselves on this website, clients put their needs for house repairing and masters bid for a jobs.\r\nThis site also has administration backend, where owner of the site can manage with a lot of stuff, such as delete masters and clients who violate regulations of the site. Also has chat application where masters can communicate with the clients.', 'https://github.com/yt5ytt/majstorionline.com.git', 'majstorionline.jpg'),
+(3, 'SK Valjevo1880', 'http://valjevo1880.com/', 'SK Valjevo1880 is online portal for local shooting Club. Technology used for it is WordPress CMS.\r\n\r\nThis website is fully informational portal, where visitors can read various news of sports successes of local shooting club Valjevo1880, from Valjevo, Serbia.\r\n\r\nPreviously, this site was made in procedural PHP with MySQL integration. It had its own backend where owner could add various news and could enter live results from local competitions. But, now it is made in WordPress and has all functionality of that CMS.', '', 'valjevo1880.png');
 
 -- --------------------------------------------------------
 
@@ -111,6 +135,12 @@ ALTER TABLE `pages`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `portfolio`
+--
+ALTER TABLE `portfolio`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `social`
 --
 ALTER TABLE `social`
@@ -131,6 +161,12 @@ ALTER TABLE `technologies`
 --
 ALTER TABLE `pages`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `portfolio`
+--
+ALTER TABLE `portfolio`
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `social`
