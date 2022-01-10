@@ -1,8 +1,9 @@
-<div id="portfolio" class="wrapper">
-    <h2>These are some WordPress themes that I made till now.</h2>
+<?php use App\WordPressThemes; ?>
+<?php $wpThemes = new WordPressThemes(); ?>
 
-    <?php use App\WordPressThemes; ?>
-    <?php $wpThemes = new WordPressThemes(); ?>
+<div id="portfolio" class="wrapper">
+
+    <?php $wpThemes -> is_empty(); ?>
 
     <div class="portfolio">
 

@@ -17,6 +17,14 @@ class WordPressThemes extends Dbh
         return $result->fetchAll();
     }
 
+    public function is_empty(){
+        if(count($this -> wpThemes()) == 0): ?>
+            <h2>There are no WordPress themes in my database yet!</h2>
+        <?php else: ?>
+            <h2>These are some WordPress themes that I made till now.</h2>    
+        <?php endif;
+    }
+
     public function getTitle($id){
         $sql = "SELECT title FROM wp_themes where id='$id'";
         $result = $this->dbh()->prepare($sql);
@@ -39,6 +47,13 @@ class WordPressThemes extends Dbh
     }
 
     public function getImage($id){
+        $sql = "SELECT text FROM wp_themes where id='$id'";
+        $result = $this->dbh()->prepare($sql);
+        $result->execute();
+        return $result->fetchColumn();
+    }
+
+    public function getTechnologies($id){
         $sql = "SELECT text FROM wp_themes where id='$id'";
         $result = $this->dbh()->prepare($sql);
         $result->execute();
