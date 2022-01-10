@@ -37,4 +37,10 @@ class Portfolio extends Dbh
         $result->execute();
         return $result->fetchColumn();
     }
+
+    public function arrayAdding($id, $lista){
+        $sql = "UPDATE portfolio SET technologies='$lista' where id='$id'";
+        $result = $this->dbh()->prepare($sql);
+        $result->execute();
+    }
 }
